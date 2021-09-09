@@ -26,7 +26,7 @@
 
 -->
 
-Terraform module to deploy a multiuser Jupyterhub + Dask Cluster on an existing EKS cluster using the DaskHub helm chart. It deploys the DaskHub Helm chart, and optionally configures SSL for you if you are using a domain name on AWS hosted with Route53.
+Terraform module to create the existing permissions and deploy a helm chart to allow an existing EKS cluster to access EFS storage.
 
 
 ---
@@ -61,10 +61,10 @@ the registry shows many of our inputs as required when in fact they are optional
 The table below correctly indicates which inputs are required.
 
 
-For a complete example, see [examples/complete](examples/complete).
-
 For automated tests of the complete example using [bats](https://github.com/bats-core/bats-core) and [Terratest](https://github.com/gruntwork-io/terratest)
 (which tests and deploys the example on AWS), see [test](test).
+
+This module requires an existing EKS cluster. You can create it seperately and grab the `eks_cluster_id`, or bootstrap the EKS Cluster + EFS CSI claim below.
 
 ```hcl
 provider "aws" {
@@ -118,6 +118,7 @@ provider "helm" {
   }
 }
 
+
 module "efs_csi" {
   depends_on = [
     module.eks,
@@ -141,7 +142,7 @@ module "efs_csi" {
 ## Examples
 
 Here is an example of using this module:
-- [`examples/complete`](https://github.com/dabble-of-devops-biodeploy/terraform-aws-eks-jupyterhub/) - complete example of using this module
+- [`examples/complete`](https://github.com/dabble-of-devops-biodeploy/terraform-aws-eks-efs-csi/) - complete example of using this module
 
 
 
