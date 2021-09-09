@@ -1,14 +1,11 @@
-output "id" {
-  description = "ID of the created example"
-  value       = module.this.enabled ? module.this.id : null
+output "iam_assumable_role_efs_csi" {
+  value = module.iam_assumable_role_efs_csi
 }
 
-output "example" {
-  description = "Example output"
-  value       = module.this.enabled ? local.example : null
+output "efs_csi_helm_release" {
+  value = helm_release.efs_csi
 }
 
-output "random" {
-  description = "Stable random number for this example"
-  value       = module.this.enabled ? join("", random_integer.example[*].result) : null
+output "kubernetes_storage_claims" {
+  value = module.kubernetes_volume_claims
 }
