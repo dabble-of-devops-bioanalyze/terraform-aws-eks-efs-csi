@@ -115,7 +115,7 @@ usage: |-
   }
 
   module "eks" {
-    source = "dabble-of-devops-biodeploy/terraform-aws-eks-autoscaling"
+    source = "dabble-of-devops-biodeploy/eks-autoscaling/aws"
 
     region = var.region
     vpc_id = var.vpc_id
