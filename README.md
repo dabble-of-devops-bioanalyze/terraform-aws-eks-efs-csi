@@ -3,7 +3,7 @@
 # terraform-aws-eks-efs-csi [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-example-module.svg)](https://github.com/cloudposse/terraform-example-module/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com) [![Discourse Forum](https://img.shields.io/discourse/https/ask.sweetops.com/posts.svg)](https://ask.sweetops.com/)
 <!-- markdownlint-restore -->
 
-![BioDeploy Logo](https://raw.githubusercontent.com/Dabble-of-DevOps-BioHub/biohub-info/master/logos/BioHub_v2-01.jpg)
+![BioAnalyze Logo](https://raw.githubusercontent.com/Dabble-of-DevOps-BioAnalyze/biohub-info/master/logos/BioAnalyze_v2-01.jpg)
 
 <!--
 
@@ -31,7 +31,7 @@ Terraform module to create the existing permissions and deploy a helm chart to a
 
 ---
 
-This project is part of the ["BioDeploy"](https://www.dabbleofdevops.com/biohub) project, which aims to make High Performance Compute Architecture accessible to everyone.
+This project is part of the ["BioAnalyze"](https://www.dabbleofdevops.com/biohub) project, which aims to make High Performance Compute Architecture accessible to everyone.
 
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
@@ -43,7 +43,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Data Science Infrastructure on AWS
 
-![BioHub Logo](https://raw.githubusercontent.com/Dabble-of-DevOps-BioHub/biohub-info/master/images/BioHub-Ecosystem-Data-Visualization.jpeg)
+![BioAnalyze Logo](https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/biohub-info/master/images/BioAnalyze-Ecosystem-Data-Visualization.jpeg)
 
 
 
